@@ -1,0 +1,118 @@
+Business Requirement Document (BRD)
+Project Title: Student Exam Performance Analysis Dashboard
+1. Project Overview
+The objective of this dashboard is to analyze student academic performance using different educational, behavioral, and demographic factors. The dashboard helps users identify trends related to attendance, study habits, internet access, tutoring, GPA, and performance levels.
+The dashboard is developed in Power BI with interactive slicers, KPI cards, and analytical charts for better decision-making.
+2. Dashboard Objectives
+Monitor student academic performance
+Analyze factors affecting exam scores
+Compare student behavior and study patterns
+Identify pass/fail distribution
+Evaluate impact of tutoring, attendance, and internet access
+Provide interactive filtering for detailed analysis
+3. Data Cleaning Process
+Removed duplicate records
+Checked null values and replaced missing data where required
+Corrected inconsistent categorical values
+Verified numerical columns datatype
+Removed unnecessary columns
+Used Describe() analysis for statistical understanding
+Standardized category names
+4. Dashboard Structure
+The dashboard contains 2 Pages:
+Academic Performance Overview
+Student Lifestyle & Support Analysis
+PAGE 1 – Academic Performance Overview
+Page Name:
+Academic Performance Overview Dashboard
+KPI Cards
+1. Average Assignment Completion
+Formula:
+Average Assignment Completion = AVERAGE(assignment_completion_rate)
+2. Average Attendance
+Formula:
+Average Attendance = AVERAGE(attendance_rate)
+3. Average Final Score
+Formula:
+Average Final Score = AVERAGE(final_exam_score)
+4. Average GPA
+Formula:
+Average GPA = AVERAGE(previous_gpa)
+Page 1 Slicers
+Gender
+Performance Level
+Parental Education
+Assignment Completion Rate
+Charts Used in Page 1
+Chart Name
+Chart Type
+Purpose
+Average Subject Score by Gender
+Clustered Column Chart
+Compare subject scores between male and female students
+Final Exam Score vs Study Hours Per Day
+Line Chart
+Analyze impact of study hours on exam score
+Pass vs Fail Distribution
+Donut Chart
+Show percentage of pass and fail students
+Previous GPA by Parental Education
+Clustered Bar Chart
+Compare GPA based on parental education
+Attendance Rate by Performance Level
+Area Chart
+Analyze attendance trend across performance levels
+PAGE 2 – Student Lifestyle & Support Analysis
+Page Name:
+Student Lifestyle & Support Dashboard
+KPI Cards
+1. Average Sleep Hours
+Formula:
+Average Sleep Hours = AVERAGE(sleep_hours)
+2. Average Social Media Hours
+Formula:
+Average Social Media Hours = AVERAGE(social_media_hours)
+3. Average Study Hours
+Formula:
+Average Study Hours = AVERAGE(study_hours_per_day)
+4. Pass Percentage
+Formula:
+Pass Percentage =
+(DISTINCTCOUNT(Pass Students) / DISTINCTCOUNT(Total Students)) * 100
+Page 2 Slicers
+Family Income
+Tutoring
+Internet Access
+Grade Category
+Charts Used in Page 2
+Chart Name
+Chart Type
+Purpose
+Final Exam Score by Sleep Hours
+Area Chart
+Analyze relationship between sleep and exam performance
+Final Exam Score by Tutoring
+Column Chart
+Compare scores of students taking tutoring vs not taking tutoring
+Internet Access Distribution
+Pie Chart
+Show percentage of students with internet access
+Students by Study Environment
+Area Chart
+Compare student count across study environments
+Performance Level by Family Income
+Ribbon Chart
+Analyze performance distribution based on family income
+5. Expected Outcomes
+Better understanding of student academic behavior
+Identification of major performance influencing factors
+Improved educational decision-making
+Interactive data exploration through slicers
+Easy monitoring of student success metrics
+6. Tools & Technologies
+Power BI Desktop
+Power Query
+DAX Measures
+Excel/CSV Dataset
+7. Conclusion
+The Student Exam Performance Analysis Dashboard provides a complete analytical overview of student academic performance and lifestyle factors. The dashboard enables institutions and educators to identify improvement areas and support student success using data-driven insights.
